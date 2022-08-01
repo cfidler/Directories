@@ -1,0 +1,107 @@
+﻿<!DOCTYPE HTML><HTML><HEAD><TITLE>TreeSize Professional Report, C:\Users\cfidler\Desktop\Github test\</TITLE><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>*
+{
+    padding: 0;
+}
+body
+{
+        margin: 0px auto;
+        font-family: Arial, Helvetica, sans-serif, Serif;
+        font-size: 11px;
+}
+body, body td, body a {
+	font-weight: normal;
+	color: #000;
+	text-decoration: none;
+}
+body.prominent-links a {
+	font-weight: bold !important;
+	color: #00f !important; /* equals clHyperlink */
+	text-decoration:underline !important; 
+}
+h1,h2,h3
+{
+	font-weight: normal;
+    text-align:center;
+}
+h1 {
+	font-size: 1.5em ;
+}
+h3 {
+	font-size: 1.3em;
+}
+table
+{
+    border-collapse:collapse;
+    width: 100%;
+    font-family: Arial, Calibri, Helvetica, sans-serif, Serif;
+    font-size:1em !important;
+	position: relative;
+	z-index: 0;
+	table-layout: fixed;
+}
+td, th
+{
+    vertical-align: top;
+    white-space: nowrap;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+	background-color: white;
+	overflow-x: hidden;
+	position: relative;
+	z-index: 1;
+}
+table td span {
+  font-family:monospace;
+  font-size: 150% !important;
+  white-space:pre;
+  color: #888;
+  font-weight: normal !important;
+}
+table img {
+	vertical-align: bottom;
+}
+table:hover tr td
+{
+	background-color: #f0f0f0;
+}
+#container
+{
+    margin: 1%;
+}
+th {
+	background-color: #fff !important;
+	font-weight: normal;
+	font-size: 120% !important;
+	border-bottom: 2px solid #999 !important; /* 1px will not get rendered in FF and IE11 */
+	padding: 0 0.4em;
+}
+.leaf
+{
+    display: none;
+}
+span[onclick="toggleFolding(this)"]:hover
+{
+    cursor: pointer;
+	background-color:#ccc;
+	color: #000 !important;
+	border-color: #000 !important;
+}
+span[onclick="toggleFolding(this)"]
+{
+    font-family: Courier, sans-serif, Serif;
+	border: 1px solid #999;
+	font-size: 1em !important;
+	padding: 0 0.2em;
+}
+.first-col
+{
+    text-align: left !important;
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+}
+
+</style><script>function toggleFolding(e){  var selectedNode = e.parentNode.parentNode.parentNode.parentNode;   selectedLeaf = getNextSibling(selectedNode);   if(selectedLeaf.style.display != "block") {    selectedLeaf.style.display = "block";    e.innerHTML = "-"  }  else {    selectedLeaf.style.display = "none";    e.innerHTML = "+"  }}function getNextSibling(element){  do {    element = element.nextSibling;  } while (element && element.nodeType != 1);  return element;}</script><noscript>  <style>  .leaf	{display: block; }  td, th{ white-space: normal;}  .first-col { width: 30%; }  </style></noscript></HEAD><BODY ><div id="container"><table><tr ><th class="first-col"  width="210"  align="left">Name</th><th width="85"  align="right">Size</th><th width="55"  align="right">Files</th><th width="55"  align="right">Folders</th><th width="96"  align="left">Creation Date</th></tr>
+</table><table><tr><td  class="first-col" width="210"><span></span>&nbsp;<a href="file://\\36M3MP2\Users\cfidler\Desktop\Github test\" ><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="embedded1_4172437">&nbsp;C:\…\cfidler\Desktop\Github&nbsp;test\&nbsp;&nbsp;on&nbsp;&nbsp;[Windows]</a></td><td  align="right"   width="85">0.0&nbsp;MB</td><td  align="right"   width="55">1</td><td  align="right"   width="55">3</td><td   width="96">8/1/2022</td></tr></table><table><tr><td  class="first-col" width="210"><span>&nbsp;├</span>&nbsp;<span onclick="toggleFolding(this)">+</span>&nbsp;<a href="file://\\36M3MP2\Users\cfidler\Desktop\Github test\Folder 1\" ><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="embedded1_4172437">&nbsp;Folder&nbsp;1</a></td><td  align="right"   width="85">0.0&nbsp;MB</td><td  align="right"   width="55">1</td><td  align="right"   width="55">0</td><td   width="96">8/1/2022</td></tr></table><div class="leaf"><table><tr><td  class="first-col" width="210"><span>&nbsp;│&nbsp;└</span>&nbsp;<a href="file://\\36M3MP2\Users\cfidler\Desktop\Github test\Folder 1\File 1.docx" ><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="embedded2_4172437">&nbsp;File&nbsp;1.docx</a></td><td  align="right"   width="85">0.0&nbsp;MB</td><td  align="right"   width="55">1</td><td  align="right"   width="55">0</td><td   width="96">8/1/2022</td></tr></table></div><table><tr><td  class="first-col" width="210"><span>&nbsp;└</span>&nbsp;<span onclick="toggleFolding(this)">+</span>&nbsp;<a href="file://\\36M3MP2\Users\cfidler\Desktop\Github test\Folder 2\" ><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="embedded1_4172437">&nbsp;Folder&nbsp;2</a></td><td  align="right"   width="85">0.0&nbsp;MB</td><td  align="right"   width="55">0</td><td  align="right"   width="55">1</td><td   width="96">8/1/2022</td></tr></table><div class="leaf"><table><tr><td  class="first-col" width="210"><span>&nbsp;&nbsp;&nbsp;└</span>&nbsp;<a href="file://\\36M3MP2\Users\cfidler\Desktop\Github test\Folder 2\Subfolder 1\" ><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="embedded1_4172437">&nbsp;Subfolder&nbsp;1</a></td><td  align="right"   width="85">0.0&nbsp;MB</td><td  align="right"   width="55">0</td><td  align="right"   width="55">0</td><td   width="96">8/1/2022</td></tr></table></div></div>
+<style type="text/css">.embedded1_4172437 {  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMA/wD/AP83WBt9AAABTElEQVR42mP8//8/AwPD50t+IAYIMoBIsCCcASSYORX5daYA2YwQoU8Xffmkw0FKGP6B5IEkSDmCfPtws7DZNiQNF3z5ZMJwqQaKvH2wVdgcScPHC778MiG4VAMZbx5uF0HRcB6oIRiXaiDjzYPtIhbbERo+nPMRkA3CpRrIeH1/p6gluoZAXKqBTn39YBeqhrNADf64VINt2C1qtQOh4f0Zb0E5f1yq///7/frBAVHzNYwsPEgaZH2xqgayPzw7+/fPd2ZuNQGdLqiGd6e9heR8sKoGiry6v09Y1urt42Ni1jtgGk55Ccl7Y1UNJF/e2yeu5AQibXZCNbw95SUs54kraby8d0BcyQFE2sI1nPQSlvfAlTRe3DsooWQPIuEa3pz0EpF3w5U0Xtw9LKFsCyLt4BpOeEJSNChB/4fSiNTO8J+RgZGRhVvcah0APehd8FAD3gMAAAAASUVORK5CYII=);  width: 16px;  height: 16px; }.embedded2_4172437 {  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMA/wD/AP83WBt9AAAA6ElEQVR42mP8//8/AxisWLaMARtgZWVzdnEWEBSEcBmRNURERaGpntjfn5ScvGvnLrgewhryCws/f/oE18N4+urTT99+3Xjw5uipS6zcwjcfvv387deVFRkzZ84Eajh6+PCiJUuADLgeRu3w6ZjuBmpAtgHChujBqQFuA1zQ2NhYXFwcpCEz2GT62jPIJNwGNAD0J0gDUFonYgYaCbEBGaSnp+PTgM8GoDOyQ02mrj4DISFOwmcDxJdw45FDCbsNeEIJpw244gGLDU9ff3r26vOpa89On7v0nx09prHYgD8tYbGBYPJGAwD9rswvRJEZdAAAAABJRU5ErkJggg==);  width: 16px;  height: 16px; }</style></BODY></HTML>
